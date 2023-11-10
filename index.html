@@ -4,51 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clube Meninos do Lago</title>
+    <title>Projeto Meninos do Lago</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
+        <div id="headerInfo">
+            <img src="images/logoImel.jpg.png" alt="Logo IMEL">
+            <h1>Instituto Meninos do Lago<br>IMEL</h1>
+        </div>
+        <div id="headerButtons">
+            <nav>
+                <ul>
+                    <li><button id="homePageBtn" class="navBtns"
+                            onclick="window.location.href='index.html';">INÍCIO</button>
+                    </li>
+                    <li><button id="aboutBtn" class="navBtns" onclick="window.location.href='about.html';">SOBRE NÓS</button>
+                    </li>
+                    <li><button id="contactBtn" class="navBtns"
+                            onclick="window.location.href='contact.html';">CONTATO</button>
+                    </li>
+                </ul>
+            </nav>
 
+            <nav>
+                <ul>
+                    <li><button id="loginBtn" class="navBtns"
+                            onclick="window.location.href='login.html';">LOGIN</button>
+                    </li>
+                    <li><button id="registerBtn" class="navBtns"
+                            onclick="window.location.href='register.html';">CADASTRE-SE</button></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <nav>
-        <ul>
-            <li><button id="homePageBtn" class="navBtns" onclick="window.location.href='index.html';">Início</button>
-            </li>
-            <li><button id="aboutBtn" class="navBtns" onclick="window.location.href='about.html';">Sobre Nós</button>
-            </li>
-            <li><button id="contactBtn" class="navBtns" onclick="window.location.href='contact.html';">Contato</button>
-            </li>
-        </ul>
-    </nav>
-
+    <div id="bannerContainer">
+        <div class="banner">
+            <img src="images/banner1.jpg" alt="Banner 1">
+            <img src="images/banner2.jpg" alt="Banner 2">
+            <img src="images/banner3.jpg" alt="Banner 3">
+        </div>
+        <div class="bannerBtn">
+            <button id="leftBtn" onclick="prevBanner()"><</button>
+            <button id="rightBtn" onclick="nextBanner()">></button>
+        </div>
+    </div>
+    
     <section class="projeto-info">
         <h2>METAS DO PROJETO</h2>
         <div id="projectInfoDiv">
             <main>
-                <p>&nbsp; O Projeto Meninos do Lago se dedica à divulgação da cultura da canoagem como forma de lazer, oferecendo também a prática do olimpismo e paralimpismo para preparar jovens atletas de escolas públicas, cadeirantes, amputados e mulheres com câncer de mama residentes em Foz do Iguaçu para representarem com excelência o Brasil nas modalidades de Canoagem Slalom, Caiaque Polo, Dragon Boat e Paracanoagem em eventos nacionais e internacionais, além de contribuir socialmente com atividades e campanhas contra o câncer de mama e na realização de eventos desportivos, gerando imagens e matérias que projetam positivamente as belezas naturais de Foz do Iguaçu.</p>
+                <p>&nbsp; O Projeto Meninos do Lago se dedica à divulgação da cultura da canoagem como forma de lazer,
+                    oferecendo também a prática do olimpismo e paralimpismo para preparar jovens atletas de escolas
+                    públicas, cadeirantes, amputados e mulheres com câncer de mama residentes em Foz do Iguaçu para
+                    representarem com excelência o Brasil nas modalidades de Canoagem Slalom, Caiaque Polo, Dragon Boat
+                    e Paracanoagem em eventos nacionais e internacionais, além de contribuir socialmente com atividades
+                    e campanhas contra o câncer de mama e na realização de eventos desportivos, gerando imagens e
+                    matérias que projetam positivamente as belezas naturais de Foz do Iguaçu.</p>
             </main>
         </div>
     </section>
-
-    <!-- <div style="text-align: center;">
-        <img src="images/imagem1.jpg" alt="Imagem 1">
-        <img src="images/imagem2.jpg" alt="Imagem 2">
-    </div> -->
-
+    
     <footer>
         <div class="infoContact">
             <h4>Informações de Contato</h4>
-                <p>(45) 9929-7476</p>
-                <a href="www.facebook.com/meninosdolago">Facebook</a>
+            <p>(45) 9929-7476</p>
+            <a href="www.facebook.com/meninosdolago">Facebook</a>
         </div>
         <div class="supporters">
             <h4>Apoio e Patrocínio</h4>
-        <img src="images/logoitaipu.jpg" alt="Logo Itaipu">
-        <img src="images/logofepacan.jpg" alt="Logo Fepacan">
-        <img src="images/logoprefeiturafoz.jpg" alt="Logo Prefeitura de Foz do Iguaçu">
+            <img src="images/logoitaipu.jpg" alt="Logo Itaipu">
+            <img src="images/logofepacan.jpg" alt="Logo Fepacan">
+            <img src="images/logoprefeiturafoz.jpg" alt="Logo Prefeitura de Foz do Iguaçu">
         </div>
     </footer>
     <script src="js/script.js"></script>
