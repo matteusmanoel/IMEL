@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cadastro</title>
+    <style>
+        h3 {
+            font-weight: bolder;
+            font-size: 40px;
+            letter-spacing: 2px;
+            margin: 20px;
+        }
+
+        .userInfo{
+            justify-content: center;
+            width: 35vh;
+            height: 40px;
+            border-radius: 15px;
+            margin: 5px;
+            margin-top: 10px;
+            border: none;
+            justify-content: center;
+            padding: 0 15px;
+            font-size: 15px;
+        }
+
+        label {
+            margin-left: 25px;
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .line1,
+        .line2,
+        .line3 {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+
+        }
+
+        .personalRegister {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            background-color: #3498db;
+            padding: 15px 5px;
+            border-radius: 50px;
+        }
+
+        #loginSubmit {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 60px;
+            width: 40%;
+            font-size: 25px;
+            align-items: center;
+            background-color: black;
+            padding: 10px;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 15px;
+            border: none;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        #loginSubmit:hover {
+            background-color: darkgray;
+            transition: background 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="headerInfo">
+            <img src="images/logoImel.jpg.png" alt="Logo IMEL">
+            <h1>Instituto Meninos do Lago<br>IMEL</h1>
+        </div>
+        <div id="headerButtons">
+            <nav>
+                <ul>
+                    <li><button id="homePageBtn" class="navBtns"
+                            onclick="window.location.href='index.html';">INÍCIO</button>
+                    </li>
+                    <li><button id="aboutBtn" class="navBtns" onclick="window.location.href='about.html';">SOBRE
+                            NÓS</button>
+                    </li>
+                    <!-- <li><button id="contactBtn" class="navBtns"
+                            onclick="window.location.href='contact.html';">CONTATO</button> -->
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="personalRegister">
+                <h3>CADASTRO</h3>
+                <div class="line1">
+                    <div class="lines"><p><label for="nomeCompleto">NOME COMPLETO</label><br><input class="userInfo" placeholder=""></p></div>
+                    <div class="lines"><p><label for="cpf">CPF</label><br><input class="userInfo" type="number" placeholder=""></p></div>
+                    <div class="lines"><p><label for="dataNascimento">DATA DE NASCIMENTO</label><br><input class="userInfo" type="datetime" placeholder=""></p></div>
+                    <div class="lines"><p><label for="sexo">SEXO</label><br><input class="userInfo" placeholder=""></p></div>
+                    </div>
+                    <div class="line2">
+                    <div class="lines"><p><label for="endereço">ENDEREÇO</label><br><input class="userInfo" placeholder=""></p></div>
+                    <div class="lines"><p><label for="endereçoN">NÚMERO</label><br><input class="userInfo" type="number" placeholder=""></p></div>
+                    <div class="lines"><p><label for="endereçoComp">COMPLEMENTO</label><br><input class="userInfo" placeholder=""></p></div>
+                    <div class="lines"><p><label for="cep">CEP</label><br><input class="userInfo" type="number" placeholder=""></p></div>
+                    </div>
+                    <div class="line3">
+                    <div class="lines"><p><label for="responsavel">NOME DO REPONSÁVEL</label><br><input class="userInfo" placeholder=""></p></div>
+                    <div class="lines"><p><label for="rendaFml">RENDA FAMILIAR</label><br><input class="userInfo" type="number"placeholder=""></p></div>
+                    <div class="lines"><p><label for="cidade">CIDADE</label><br><input class="userInfo" placeholder=""></p></div>
+                    <div class="lines"><p><label for="tel">CONTATO</label><br><input class="userInfo" type="tel" placeholder=""></p></div>
+                </div>
+                <!-- <div class="line2">
+                    <p><label for="sexo">SEXO</label><br><input id="userInfo" placeholder=""></p>
+                    <p><label for="endereçoN">NÚMERO</label><br><input id="userInfo" type="number" placeholder=""></p>
+                    <p><label for="endereçoComp">COMPLEMENTO</label><br><input id="userInfo" placeholder=""></p>
+                    <p><label for="cep">CEP</label><br><input id="userInfo" type="number" placeholder=""></p>
+                </div>
+                <div class="line3">
+                    <p><label for="responsavel">NOME DO REPONSÁVEL</label><br><input id="userInfo" placeholder=""></p>
+                    <p><label for="rendaFml">RENDA FAMILIAR</label><br><input id="userInfo" type="number"
+                            placeholder=""></p>
+                    <p><label for="cidade">CIDADE</label><br><input id="userInfo" placeholder=""></p>
+                    <p><label for="tel">CONTATO</label><br><input id="userInfo" type="tel" placeholder=""></p>
+                </div> -->
+                <button type="submit" id="loginSubmit" onclick="window.location.href='  ';">Finalizar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="infoContact">
+            <h4>Informações de Contato</h4>
+            <p>(45) 9929-7476</p>
+            <button id="faceBtn"
+                onclick="window.location.href = 'http://www.facebook.com/meninosdolago'">Facebook</button>
+        </div>
+        <div class="supporters">
+            <h4>Apoio e Patrocínio</h4>
+            <img src="images/logoitaipu.jpg" alt="Logo Itaipu">
+            <img src="images/logofepacan.jpg" alt="Logo Fepacan">
+            <img src="images/logoprefeiturafoz.jpg" alt="Logo Prefeitura de Foz do Iguaçu">
+        </div>
+    </footer>
+
+</body>
+
+</html>

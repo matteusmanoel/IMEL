@@ -248,3 +248,21 @@ h4 {
     font-size: 15px;
     text-align: center;
 }
+
+.enterInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: #3498db;
+    padding: 15px 5px;
+    border-radius: 50px;
+}
+
+.enterInfo a {
+    margin-top: -15px;
+    margin-right: -250px;
+    margin-bottom: 20px;
+    color: black;
+}
