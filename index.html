@@ -17,13 +17,14 @@
         <div id="headerButtons">
             <nav>
                 <ul>
-                    <li><button id="homePageBtn" class="navBtns"
-                            onclick="window.location.href='index.html';">INÍCIO</button>
+                    <!-- <li><button id="homePageBtn" class="navBtns"
+                            onclick="window.location.href='index.html';">INÍCIO</button> -->
                     </li>
-                    <li><button id="aboutBtn" class="navBtns" onclick="window.location.href='about.html';">SOBRE NÓS</button>
+                    <li><button id="aboutBtn" class="navBtns" onclick="window.location.href='about.html';">SOBRE
+                            NÓS</button>
                     </li>
-                    <li><button id="contactBtn" class="navBtns"
-                            onclick="window.location.href='contact.html';">CONTATO</button>
+                    <!-- <li><button id="contactBtn" class="navBtns"
+                            onclick="window.location.href='contact.html';">CONTATO</button> -->
                     </li>
                 </ul>
             </nav>
@@ -39,38 +40,43 @@
             </nav>
         </div>
     </header>
-    <div id="bannerContainer">
-        <div class="banner">
-            <img src="images/banner1.jpg" alt="Banner 1">
-            <img src="images/banner2.jpg" alt="Banner 2">
-            <img src="images/banner3.jpg" alt="Banner 3">
+
+    <main>
+        <div id="bannerContainer">
+            <div class="banner">
+                <img src="images/banner1.jpg" alt="Banner 1">
+                <img src="images/banner2.jpg" alt="Banner 2">
+                <img src="images/banner3.jpg" alt="Banner 3">
+            </div>
+            <div class="bannerBtn">
+                <button id="leftBtn" onclick="prevBanner()"><</button>
+                        <button id="rightBtn" onclick="nextBanner()">></button>
+            </div>
         </div>
-        <div class="bannerBtn">
-            <button id="leftBtn" onclick="prevBanner()"><</button>
-            <button id="rightBtn" onclick="nextBanner()">></button>
-        </div>
-    </div>
-    
-    <section class="projeto-info">
-        <h2>METAS DO PROJETO</h2>
-        <div id="projectInfoDiv">
-            <main>
-                <p>&nbsp; O Projeto Meninos do Lago se dedica à divulgação da cultura da canoagem como forma de lazer,
-                    oferecendo também a prática do olimpismo e paralimpismo para preparar jovens atletas de escolas
-                    públicas, cadeirantes, amputados e mulheres com câncer de mama residentes em Foz do Iguaçu para
-                    representarem com excelência o Brasil nas modalidades de Canoagem Slalom, Caiaque Polo, Dragon Boat
-                    e Paracanoagem em eventos nacionais e internacionais, além de contribuir socialmente com atividades
-                    e campanhas contra o câncer de mama e na realização de eventos desportivos, gerando imagens e
-                    matérias que projetam positivamente as belezas naturais de Foz do Iguaçu.</p>
-            </main>
-        </div>
-    </section>
-    
+        <section class="projeto-info">
+            <h2>Sobre o Projeto</h2>
+            <div id="projectInfoDiv">
+                <main>
+                    <p>&nbsp; O Projeto Meninos do Lago se dedica à divulgação da cultura da canoagem como forma de
+                        lazer,
+                        oferecendo também a prática do olimpismo e paralimpismo para preparar jovens atletas de escolas
+                        públicas, cadeirantes, amputados e mulheres com câncer de mama residentes em Foz do Iguaçu para
+                        representarem com excelência o Brasil nas modalidades de Canoagem Slalom, Caiaque Polo, Dragon
+                        Boat
+                        e Paracanoagem em eventos nacionais e internacionais, além de contribuir socialmente com
+                        atividades
+                        e campanhas contra o câncer de mama e na realização de eventos desportivos, gerando imagens e
+                        matérias que projetam positivamente as belezas naturais de Foz do Iguaçu.</p>
+                </main>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="infoContact">
             <h4>Informações de Contato</h4>
             <p>(45) 9929-7476</p>
-            <a href="www.facebook.com/meninosdolago">Facebook</a>
+            <button id="faceBtn" onclick="window.location.href = 'http://www.facebook.com/meninosdolago'">Facebook</button>
         </div>
         <div class="supporters">
             <h4>Apoio e Patrocínio</h4>

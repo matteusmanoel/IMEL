@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>sobre nós</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .contentAbout {
+        display: block;
+        align-content: center;
+        text-align: center;
+        padding: 40px;
+        margin: 20px;
+        text-align: justify;
+        background: lightblue;
+        }
+
+        .tih1 {
+            padding-bottom: 20px;
+        }
+
+    </style>
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <div id="headerInfo">
+            <img src="images/logoImel.jpg.png" alt="Logo IMEL">
+            <h1>Instituto Meninos do Lago<br>IMEL</h1>
+        </div>
+        <div id="headerButtons">
+            <nav>
+                <ul>
+                    <li><button id="homePageBtn" class="navBtns"
+                            onclick="window.location.href='index.html';">INÍCIO</button>
+                    </li>
+                    <!-- <li><button id="aboutBtn" class="navBtns" onclick="window.location.href='about.html';">SOBRE NÓS</button>
+                    </li>
+                    <li><button id="contactBtn" class="navBtns"onclick="window.location.href='contact.html';">CONTATO</button>
+                    </li> -->
+                </ul>
+            </nav>
+    
+            <nav>
+                <ul>
+                    <li><button id="loginBtn" class="navBtns"
+                            onclick="window.location.href='login.html';">LOGIN</button>
+                    </li>
+                    <li><button id="registerBtn" class="navBtns"
+                            onclick="window.location.href='register.html';">CADASTRE-SE</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main>
+<div class="contentAbout">
+    <div class="tih1"><h1>SOBRE NÓS</h1></div>
     <p>
         O Instituto Meninos do Lago - IMEL - é uma entidade de prática desportiva, fundada em 30 de julho de 2011 por
         iniciativa da Federação Paranaense de Canoagem e apoio da Confederação Brasileira de Canoagem com o propósito
@@ -39,60 +86,20 @@
     <p>
         Está sediado na Cidade de Foz do Iguaçu, Bairro Maracanã, à Rua Mato Grosso, 512, CEP 85.852-040, com Cadastro
         Nacional de Pessoas Jurídicas sob n° 14.525.879/0001-08.
-    </p>
-    <p>
-        Dowload Atas e Estatutos
-    </p>
-    <p>
-        2022-9a Ata-AssembleiaGeralEletiva
-    </p>
-    <p>
-        2021-ESTATUTO ATUALIZADO LEI 9615/98
-    </p>
-    <p>
-        2021-8a Ata-Alterações Estatutárias
-    </p>
-    <p>
-        2021-7a Ata-Informações
-    </p>
-    <p>
-        2019 - 6a Ata - Substituições
-    </p>
-    <p>
-        2018 - Estatuto
-    </p>
-    <p>
-        2018 - 5a Ata - Eleições
-    </p>
-    <p>
-        2018 - 4a Ata Alteração Estatutária
-    </p>
-    <p>
-        2014 - Estatuto
-    </p>
-    <p>
-        2014 - 3a Ata - Alteração Estatutária
-    </p>
-    <p>
-        2014 - 2a Ata
-    </p>
-    <p>
-        2011 - Estatuto
-    </p>
-    <p>
-        2011 - Ata de Fundação
-    </p>
+</div>
+</main>
     <footer>
-        <div class="participantes">
-            <p>Participantes do Grupo:</p>
-            <ul>
-                <li>Carlos Henrique Sobreira dos Santos - caiquesantosss02@gmail.com</li>
-                <li>Lucas Maitan Queiroz - lucas_maitanqueiroz_@hotmail.com</li>
-                <li>João Francisco Deon Porazzi Visinoni - joaofvisinoni@gmail.com</li>
-                <li>Mateus Manoel Ferreira - mateusmanoelfr@gmai.com</li>
-            </ul>
+        <div class="infoContact">
+            <h4>Informações de Contato</h4>
+            <p>(45) 9929-7476</p>
+            <button id="faceBtn" onclick="window.location.href = 'http://www.facebook.com/meninosdolago'">Facebook</button>
         </div>
-    </footer>   
+        <div class="supporters">
+            <h4>Apoio e Patrocínio</h4>
+            <img src="images/logoitaipu.jpg" alt="Logo Itaipu">
+            <img src="images/logofepacan.jpg" alt="Logo Fepacan">
+            <img src="images/logoprefeiturafoz.jpg" alt="Logo Prefeitura de Foz do Iguaçu">
+        </div>  
+    </footer> 
 </body>
-
 </html>
